@@ -1,0 +1,260 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+   
+}
+.zaglavlje{
+	padding:0px 0px 40px 0px;
+	
+}
+ .zaglavlje img{
+	width:40px;
+	height:40px;
+    position: absolute;
+	animation-name: brod; 
+    animation-duration: 10s;
+    animation-direction: alternate; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+	margin:0px 0px 2px opx;
+}
+ @keyframes brod {
+    from{
+        left: 0px;
+    }
+
+    to{
+        left: 100%;
+    }
+	.meni {
+		border:1px solid red;
+		
+	}
+.meni .meni-lista{
+	display:inline;
+	
+}
+
+	
+}
+.meni-slika img{
+	width:80px;
+}
+.meni-slika {
+	padding:0px;
+	
+}
+.meni {
+	display:flex;
+justify-content:space-between;
+align-items:flex-start;
+
+}
+ul {
+	display:flex;
+	list-style-type:none;
+}
+.ostatak-liste a{
+	text-decoration:none; 
+	margin:20px;
+	 color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+	font-size:25px;
+	border-radius:25px;
+	padding:10px 15px;
+}
+button{
+	color: black;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+	
+}
+.ostatak-liste{
+	display:flex;
+	text-align:center;
+	margin:10px;
+}
+button:hover{
+	background:#9d9bb0;
+}
+.ostatak-liste a:hover{
+	background:#9d9bb0;
+}
+.padajuci-meni{
+	display:none;
+	z-index: 1;
+	position:absolute;  
+}
+.dugme:hover .padajuci-meni{
+	display:inline;
+	
+}
+.dugme .padajuci-meni a{
+	text-decoration:none; 
+	 color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+	font-size:15px;
+	border-radius:25px;
+	padding:10px;
+
+	}
+
+	.dugme .padajuci-meni a:hover{
+		color:#7c7b85;
+	}
+.tekst {
+	position:absolute;
+    display: block;
+    background-image: url('../slike/sea.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+}
+
+.tekst p {
+    color:black;
+    font-size: 14px;
+    column-count: 3;
+	padding:20px;
+}
+
+.tekst h1 {
+    margin: 0px 170px;
+}
+
+.kontakt{
+border:1px solid gold;
+text-align:center;
+
+}
+.adresa{
+padding:0vh 50vh;
+
+}
+.adresa .poruka{
+float:right;
+}
+
+
+.pozadina {
+border:3px solid black;
+text-align:center;
+width:100%;
+height:55vh;
+background-size:cover;
+background-repeat:no-repeat;
+}
+.pozadina.solun{
+background-image:url('../slike/solun.jpg');
+}
+.pozadina.valensija{
+background-image:url('../slike/valenci.jpg');
+}
+.pozadina.engleska{
+background-image:url('../slike/engleska.jpg');
+}
+.pozadina p{
+font-size:25px;
+font-family:cursive;
+color:white;
+}
+.pozadina .upit input[type="submit"]{
+font-size: 16px; 
+background-color: #223d1a; 
+border-radius: 16px; 
+border: 3px solid ;
+color:white;
+}
+h1{	
+	font-size: 36px;
+    margin: 0;
+    padding: 20px;
+    display: inline-block;
+    transform-origin: 50% 50%;
+    animation: rotacija 4s  linear;
+}
+@keyframes rotacija {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.kontakt img{
+	width:50px;
+	
+}
+.mapa{
+	display:flex;
+	justify-content:space-around;
+	flex-direction:row-reverse;
+}
+.poruka{
+	margin:50px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:425px) {
+	.meni {
+		display:flex;
+	}
+	.dugme {
+	padding:0px 110px;
+	margin:0px;	
+	}
+	.ostatak-liste{
+		display:block;
+	}
+ul{
+	display:flex;
+	flex-direction: column-reverse;
+
+}
+.tekst h1{
+margin:0px 10px;
+}
+.pozadina{
+	height:67vh;
+}
+.kontakt img{
+	width:25px;
+	
+}
+.mapa {
+	display:none;
+}
+.adresa {
+	padding:0vh 24vh;
+}
+ }
+ @media screen and (min-width:768px) and (max-width:1024px) {
+.adresa{
+	padding:0vh 28vh;
+}
+	 
+	 
+ }
